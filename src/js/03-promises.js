@@ -20,6 +20,7 @@ const firstDelay = Number(delayInput.value);
 let delay = firstDelay;
 
   for(position = 1; position <= amount; position +=1 ){
+// position = 1;
 
     createPromise(position, delay)
     .then(({ position, delay }) => Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`))
