@@ -19,7 +19,7 @@ function onFromSubmit (event) {
 const firstDelay = Number(delayInput.value);
 let delay = firstDelay;
 
-  for(position = 1; position <= amount; position +=1 ){
+  for(let position = 1; position <= amount; position +=1 ){
 // position = 1;
 
     createPromise(position, delay)
